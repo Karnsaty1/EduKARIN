@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"; // Ensure the logo is in the correct folder
+import logo from "../assets/Logo.png"; // Ensure the logo is in the correct folder
 
 const NavbarBeforeLog = () => {
   return (

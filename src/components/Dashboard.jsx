@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import loader from "./Spinner-5.gif"
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 
 const Dashboard = () => {
   const [videos, setVideos] = useState([])

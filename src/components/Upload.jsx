@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import loader from "./Spinner-5.gif"
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 
 const Upload = () => {
   const [loading, setLoading] = useState(false)
