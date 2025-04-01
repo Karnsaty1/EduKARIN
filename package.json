@@ -12,6 +12,7 @@
     "@shadcn/ui": "^0.0.4",
     "bcryptjs": "^3.0.2",
     "bootstrap": "^5.3.3",
+    "camelcase-css": "^2.0.1",
     "cloudinary": "^2.5.1",
     "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
