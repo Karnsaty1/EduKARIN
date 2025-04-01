@@ -1,0 +1,30 @@
+<button id="startCall" class="add-video-btn">Stream</button>
+
+<script>
+    const startCallBtn = document.getElementById("startCall");
+
+    startCallBtn.addEventListener("click", async () => {
+        room = "default-room"; // You can dynamically set a room if needed
+        socket.emit("join-room", room);
+
+        peerConnection = new RTCPeerConnection();
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+
+        stream.getTracks().forEach(track => peerConnection.addTrack(track, stream));
+        localVideo.srcObject = stream;
+
+        const offer = await peerConnection.createOffer();
+        await peerConnection.setLocalDescription(offer);
+        socket.emit("offer", { offer, room });
+
+        peerConnection.onicecandidate = (event) => {
+            if (event.candidate) {
+                socket.emit("candidate", { candidate: event.candidate, room });
+            }
+        };
+
+        peerConnection.ontrack = (event) => {
+            remoteVideo.srcObject = event.streams[0];
+        };
+    });
+</script>

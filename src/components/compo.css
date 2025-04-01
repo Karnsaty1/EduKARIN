@@ -1,0 +1,265 @@
+.upload-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .Tagile{
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #131fc7, #b8391a, #14e43a);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    display: block;
+  }
+  .upload-input,
+  .upload-textarea,
+  .upload-file-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .upload-input:focus,
+  .upload-textarea:focus,
+  .upload-file-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .upload-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .upload-file-input {
+    cursor: pointer;
+  }
+  
+  .upload-submit-btn {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .upload-submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  .upload-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .upload-loader {
+    width: 80px;
+    height: 80px;
+  }
+
+  .edukari-title {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #131fc7, #b8391a, #14e43a);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .add-video-btn {
+    background: linear-gradient(90deg, #007bff, #00c3ff);
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-video-btn:hover {
+    background: linear-gradient(90deg, #0056b3, #0090d9);
+  }
+  
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px; 
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .video-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 400px; 
+    overflow: hidden; 
+    max-height: 600px;
+    height: 100%;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-card h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .video-card h4 {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .video-card p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .video-card video {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .share-button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .share-button:hover {
+    background: #218838;
+  }
+  
+  .share-options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .share-options button {
+    background: #007bff;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .share-options button:hover {
+    background: #0056b3;
+  }
+  
+  .loading-image {
+    display: block;
+    margin: 50px auto;
+    width: 100px;
+    height: auto;
+  }
+  
+  .no-videos {
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+  }
+
+  
+  .toolbar{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 170px;
+  }
+
+  #localVideo {
+    position: absolute;
+    bottom: 75px;
+    left: 19px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+  }
+
+  .div-btn{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toolbar button{
+    margin: 10px;
+    margin-left: 60px;
+    margin-right: 70px;
+    margin-bottom:17px;
+  }
+  .container-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+  }
+  .toolbar-header{
+    text-align: center;
+  }
+  canvas {
+    border: 4px solid black;
+    margin: 4px; 
+    margin-left: -214px;
+   
+  }
+  
